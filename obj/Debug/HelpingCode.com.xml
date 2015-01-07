@@ -1,0 +1,27 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+HelpingCode.com
+</name>
+</assembly>
+<members>
+<member name="F:HelpingCode.com.Site.HtmlHead">
+	<summary>
+HtmlHead control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HelpingCode.com.Site.HtmlContent">
+	<summary>
+HtmlContent control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+</members>
+</doc>

@@ -1,0 +1,510 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C73AEEEE-D9B5-45EF-AEF2-DD4D45B4BEA3}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>HelpingCode.com</RootNamespace>
+    <AssemblyName>HelpingCode.com</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>HelpingCode.com.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>HelpingCode.com.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions.Design">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.WebPages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Helpers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Telerik.Web.Mvc, Version=2011.3.1115.235, Culture=neutral, PublicKeyToken=29ac1a93ec063d92, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Telerik.Web.Mvc.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.Mvc" />
+    <Import Include="System.Web.Mvc.Ajax" />
+    <Import Include="System.Web.Mvc.Html" />
+    <Import Include="System.Web.Routing" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\DownloadsController.vb" />
+    <Compile Include="Controllers\HomeController.vb" />
+    <Compile Include="Controllers\TinlinController.vb" />
+    <Compile Include="Core\Download.vb" />
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Services\DownloadsService.vb" />
+    <Compile Include="ViewModels\DownloadsViewModel.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="Content\Black\editor.png" />
+    <Content Include="Content\Black\imagebrowser.png" />
+    <Content Include="Content\Black\loading.gif" />
+    <Content Include="Content\Black\slider-h.gif" />
+    <Content Include="Content\Black\slider-v.gif" />
+    <Content Include="Content\Black\sprite-vertical.png" />
+    <Content Include="Content\Black\sprite.png" />
+    <Content Include="Content\Black\treeview-line.png" />
+    <Content Include="Content\Black\treeview-nodes-rtl.png" />
+    <Content Include="Content\Black\treeview-nodes.png" />
+    <Content Include="Content\Default\editor.png" />
+    <Content Include="Content\Default\imagebrowser.png" />
+    <Content Include="Content\Default\loading.gif" />
+    <Content Include="Content\Default\slider-h.gif" />
+    <Content Include="Content\Default\slider-v.gif" />
+    <Content Include="Content\Default\sprite-vertical.png" />
+    <Content Include="Content\Default\sprite.png" />
+    <Content Include="Content\Default\treeview-line.png" />
+    <Content Include="Content\Default\treeview-nodes-rtl.png" />
+    <Content Include="Content\Default\treeview-nodes.png" />
+    <Content Include="Content\Forest\editor.png" />
+    <Content Include="Content\Forest\imagebrowser.png" />
+    <Content Include="Content\Forest\loading.gif" />
+    <Content Include="Content\Forest\slider-h.gif" />
+    <Content Include="Content\Forest\slider-v.gif" />
+    <Content Include="Content\Forest\sprite-vertical.png" />
+    <Content Include="Content\Forest\sprite.png" />
+    <Content Include="Content\Forest\treeview-line.png" />
+    <Content Include="Content\Forest\treeview-nodes-rtl.png" />
+    <Content Include="Content\Forest\treeview-nodes.png" />
+    <Content Include="Content\Hay\editor.png" />
+    <Content Include="Content\Hay\imagebrowser.png" />
+    <Content Include="Content\Hay\loading.gif" />
+    <Content Include="Content\Hay\slider-h.gif" />
+    <Content Include="Content\Hay\slider-v.gif" />
+    <Content Include="Content\Hay\sprite-vertical.png" />
+    <Content Include="Content\Hay\sprite.png" />
+    <Content Include="Content\Hay\treeview-line.png" />
+    <Content Include="Content\Hay\treeview-nodes-rtl.png" />
+    <Content Include="Content\Hay\treeview-nodes.png" />
+    <Content Include="Content\Metro\editor.png" />
+    <Content Include="Content\Metro\imagebrowser.png" />
+    <Content Include="Content\Metro\loading.gif" />
+    <Content Include="Content\Metro\slider-h.gif" />
+    <Content Include="Content\Metro\slider-v.gif" />
+    <Content Include="Content\Metro\sprite.png" />
+    <Content Include="Content\Office2007\editor.png" />
+    <Content Include="Content\Office2007\imagebrowser.png" />
+    <Content Include="Content\Office2007\loading.gif" />
+    <Content Include="Content\Office2007\slider-h.gif" />
+    <Content Include="Content\Office2007\slider-v.gif" />
+    <Content Include="Content\Office2007\sprite-vertical.png" />
+    <Content Include="Content\Office2007\sprite.png" />
+    <Content Include="Content\Office2007\treeview-line.png" />
+    <Content Include="Content\Office2007\treeview-nodes-rtl.png" />
+    <Content Include="Content\Office2007\treeview-nodes.png" />
+    <Content Include="Content\Office2010Black\editor.png" />
+    <Content Include="Content\Office2010Black\imagebrowser.png" />
+    <Content Include="Content\Office2010Black\loading.gif" />
+    <Content Include="Content\Office2010Black\slider-h.gif" />
+    <Content Include="Content\Office2010Black\slider-v.gif" />
+    <Content Include="Content\Office2010Black\sprite-vertical.png" />
+    <Content Include="Content\Office2010Black\sprite.png" />
+    <Content Include="Content\Office2010Black\treeview-line.png" />
+    <Content Include="Content\Office2010Black\treeview-nodes-rtl.png" />
+    <Content Include="Content\Office2010Black\treeview-nodes.png" />
+    <Content Include="Content\Office2010Blue\editor.png" />
+    <Content Include="Content\Office2010Blue\gradient.png" />
+    <Content Include="Content\Office2010Blue\imagebrowser.png" />
+    <Content Include="Content\Office2010Blue\loading.gif" />
+    <Content Include="Content\Office2010Blue\slider-h.gif" />
+    <Content Include="Content\Office2010Blue\slider-v.gif" />
+    <Content Include="Content\Office2010Blue\sprite-vertical.png" />
+    <Content Include="Content\Office2010Blue\sprite.png" />
+    <Content Include="Content\Office2010Silver\editor.png" />
+    <Content Include="Content\Office2010Silver\gradient.png" />
+    <Content Include="Content\Office2010Silver\imagebrowser.png" />
+    <Content Include="Content\Office2010Silver\loading.gif" />
+    <Content Include="Content\Office2010Silver\slider-h.gif" />
+    <Content Include="Content\Office2010Silver\slider-v.gif" />
+    <Content Include="Content\Office2010Silver\sprite-vertical.png" />
+    <Content Include="Content\Office2010Silver\sprite.png" />
+    <Content Include="Content\Outlook\editor.png" />
+    <Content Include="Content\Outlook\imagebrowser.png" />
+    <Content Include="Content\Outlook\loading.gif" />
+    <Content Include="Content\Outlook\slider-h.gif" />
+    <Content Include="Content\Outlook\slider-v.gif" />
+    <Content Include="Content\Outlook\sprite-vertical.png" />
+    <Content Include="Content\Outlook\sprite.png" />
+    <Content Include="Content\Outlook\treeview-line.png" />
+    <Content Include="Content\Outlook\treeview-nodes-rtl.png" />
+    <Content Include="Content\Outlook\treeview-nodes.png" />
+    <Content Include="Content\Simple\editor.png" />
+    <Content Include="Content\Simple\imagebrowser.png" />
+    <Content Include="Content\Simple\loading.gif" />
+    <Content Include="Content\Simple\slider-h.gif" />
+    <Content Include="Content\Simple\slider-v.gif" />
+    <Content Include="Content\Simple\sprite.png" />
+    <Content Include="Content\Simple\treeview-line.png" />
+    <Content Include="Content\Simple\treeview-nodes-rtl.png" />
+    <Content Include="Content\Simple\treeview-nodes.png" />
+    <Content Include="Content\Sitefinity\editor.png" />
+    <Content Include="Content\Sitefinity\imagebrowser.png" />
+    <Content Include="Content\Sitefinity\loading.gif" />
+    <Content Include="Content\Sitefinity\slider-h.gif" />
+    <Content Include="Content\Sitefinity\slider-v.gif" />
+    <Content Include="Content\Sitefinity\sprite-vertical.png" />
+    <Content Include="Content\Sitefinity\sprite.png" />
+    <Content Include="Content\Sitefinity\treeview-line.png" />
+    <Content Include="Content\Sitefinity\treeview-nodes-rtl.png" />
+    <Content Include="Content\Sitefinity\treeview-nodes.png" />
+    <Content Include="Content\Sunset\editor.png" />
+    <Content Include="Content\Sunset\imagebrowser.png" />
+    <Content Include="Content\Sunset\loading.gif" />
+    <Content Include="Content\Sunset\slider-h.gif" />
+    <Content Include="Content\Sunset\slider-v.gif" />
+    <Content Include="Content\Sunset\sprite-vertical.png" />
+    <Content Include="Content\Sunset\sprite.png" />
+    <Content Include="Content\Sunset\treeview-line.png" />
+    <Content Include="Content\Sunset\treeview-nodes-rtl.png" />
+    <Content Include="Content\Sunset\treeview-nodes.png" />
+    <Content Include="Content\telerik.black.css" />
+    <Content Include="Content\telerik.black.min.css" />
+    <Content Include="Content\telerik.common.css" />
+    <Content Include="Content\telerik.common.min.css" />
+    <Content Include="Content\telerik.default.css" />
+    <Content Include="Content\telerik.default.min.css" />
+    <Content Include="Content\telerik.forest.css" />
+    <Content Include="Content\telerik.forest.min.css" />
+    <Content Include="Content\telerik.hay.css" />
+    <Content Include="Content\telerik.hay.min.css" />
+    <Content Include="Content\telerik.metro.css" />
+    <Content Include="Content\telerik.metro.min.css" />
+    <Content Include="Content\telerik.office2007.css" />
+    <Content Include="Content\telerik.office2007.min.css" />
+    <Content Include="Content\telerik.office2010black.css" />
+    <Content Include="Content\telerik.office2010black.min.css" />
+    <Content Include="Content\telerik.office2010blue.css" />
+    <Content Include="Content\telerik.office2010blue.min.css" />
+    <Content Include="Content\telerik.office2010silver.css" />
+    <Content Include="Content\telerik.office2010silver.min.css" />
+    <Content Include="Content\telerik.outlook.css" />
+    <Content Include="Content\telerik.outlook.min.css" />
+    <Content Include="Content\telerik.rtl.css" />
+    <Content Include="Content\telerik.rtl.min.css" />
+    <Content Include="Content\telerik.simple.css" />
+    <Content Include="Content\telerik.simple.min.css" />
+    <Content Include="Content\telerik.sitefinity.css" />
+    <Content Include="Content\telerik.sitefinity.min.css" />
+    <Content Include="Content\telerik.sunset.css" />
+    <Content Include="Content\telerik.sunset.min.css" />
+    <Content Include="Content\telerik.telerik.css" />
+    <Content Include="Content\telerik.telerik.min.css" />
+    <Content Include="Content\telerik.transparent.css" />
+    <Content Include="Content\telerik.transparent.min.css" />
+    <Content Include="Content\telerik.vista.css" />
+    <Content Include="Content\telerik.vista.min.css" />
+    <Content Include="Content\telerik.web20.css" />
+    <Content Include="Content\telerik.web20.min.css" />
+    <Content Include="Content\telerik.webblue.css" />
+    <Content Include="Content\telerik.webblue.min.css" />
+    <Content Include="Content\telerik.windows7.css" />
+    <Content Include="Content\telerik.windows7.min.css" />
+    <Content Include="Content\Telerik\editor.png" />
+    <Content Include="Content\Telerik\imagebrowser.png" />
+    <Content Include="Content\Telerik\loading.gif" />
+    <Content Include="Content\Telerik\slider-h.gif" />
+    <Content Include="Content\Telerik\slider-v.gif" />
+    <Content Include="Content\Telerik\sprite-vertical.png" />
+    <Content Include="Content\Telerik\sprite.png" />
+    <Content Include="Content\Telerik\treeview-line.png" />
+    <Content Include="Content\Telerik\treeview-nodes-rtl.png" />
+    <Content Include="Content\Telerik\treeview-nodes.png" />
+    <Content Include="Content\Transparent\active.png" />
+    <Content Include="Content\Transparent\editor.png" />
+    <Content Include="Content\Transparent\gradient.png" />
+    <Content Include="Content\Transparent\group.png" />
+    <Content Include="Content\Transparent\hover.png" />
+    <Content Include="Content\Transparent\imagebrowser.png" />
+    <Content Include="Content\Transparent\loading.gif" />
+    <Content Include="Content\Transparent\selected.png" />
+    <Content Include="Content\Transparent\slider-h.gif" />
+    <Content Include="Content\Transparent\slider-v.gif" />
+    <Content Include="Content\Transparent\sprite-vertical.png" />
+    <Content Include="Content\Transparent\sprite.png" />
+    <Content Include="Content\Transparent\toolbar.png" />
+    <Content Include="Content\Transparent\widget.png" />
+    <Content Include="Content\Vista\editor.png" />
+    <Content Include="Content\Vista\imagebrowser.png" />
+    <Content Include="Content\Vista\loading.gif" />
+    <Content Include="Content\Vista\slider-h.gif" />
+    <Content Include="Content\Vista\slider-v.gif" />
+    <Content Include="Content\Vista\sprite-vertical.png" />
+    <Content Include="Content\Vista\sprite.png" />
+    <Content Include="Content\Web20\editor.png" />
+    <Content Include="Content\Web20\imagebrowser.png" />
+    <Content Include="Content\Web20\loading.gif" />
+    <Content Include="Content\Web20\slider-h.gif" />
+    <Content Include="Content\Web20\slider-v.gif" />
+    <Content Include="Content\Web20\sprite-vertical.png" />
+    <Content Include="Content\Web20\sprite.png" />
+    <Content Include="Content\Web20\treeview-line.png" />
+    <Content Include="Content\Web20\treeview-nodes-rtl.png" />
+    <Content Include="Content\Web20\treeview-nodes.png" />
+    <Content Include="Content\WebBlue\editor.png" />
+    <Content Include="Content\WebBlue\imagebrowser.png" />
+    <Content Include="Content\WebBlue\loading.gif" />
+    <Content Include="Content\WebBlue\slider-h.gif" />
+    <Content Include="Content\WebBlue\slider-v.gif" />
+    <Content Include="Content\WebBlue\sprite-vertical.png" />
+    <Content Include="Content\WebBlue\sprite.png" />
+    <Content Include="Content\WebBlue\treeview-line.png" />
+    <Content Include="Content\WebBlue\treeview-nodes-rtl.png" />
+    <Content Include="Content\WebBlue\treeview-nodes.png" />
+    <Content Include="Content\Windows7\editor.png" />
+    <Content Include="Content\Windows7\imagebrowser.png" />
+    <Content Include="Content\Windows7\loading.gif" />
+    <Content Include="Content\Windows7\slider-h.gif" />
+    <Content Include="Content\Windows7\slider-v.gif" />
+    <Content Include="Content\Windows7\sprite-vertical.png" />
+    <Content Include="Content\Windows7\sprite.png" />
+    <Content Include="Scripts\components.js" />
+    <Content Include="Scripts\dom.js" />
+    <Content Include="Scripts\editor.js" />
+    <Content Include="Scripts\formatblock.js" />
+    <Content Include="Scripts\image.js" />
+    <Content Include="Scripts\indent.js" />
+    <Content Include="Scripts\inlineformat.js" />
+    <Content Include="Scripts\jquery-1.6.4.min.js" />
+    <Content Include="Scripts\jquery-1.7.1.min.js" />
+    <Content Include="Scripts\linebreak.js" />
+    <Content Include="Scripts\link.js" />
+    <Content Include="Scripts\lists.js" />
+    <Content Include="Scripts\main.js" />
+    <Content Include="Scripts\pendingformats.js" />
+    <Content Include="Scripts\range.js" />
+    <Content Include="Scripts\serializer.js" />
+    <Content Include="Scripts\svg.js" />
+    <Content Include="Scripts\system.js" />
+    <Content Include="Scripts\telerik.all.min.js" />
+    <Content Include="Scripts\telerik.autocomplete.js" />
+    <Content Include="Scripts\telerik.autocomplete.min.js" />
+    <Content Include="Scripts\telerik.calendar.js" />
+    <Content Include="Scripts\telerik.calendar.min.js" />
+    <Content Include="Scripts\telerik.chart.min.js" />
+    <Content Include="Scripts\telerik.combobox.js" />
+    <Content Include="Scripts\telerik.combobox.min.js" />
+    <Content Include="Scripts\telerik.common.js" />
+    <Content Include="Scripts\telerik.common.min.js" />
+    <Content Include="Scripts\telerik.datepicker.js" />
+    <Content Include="Scripts\telerik.datepicker.min.js" />
+    <Content Include="Scripts\telerik.datetimepicker.js" />
+    <Content Include="Scripts\telerik.datetimepicker.min.js" />
+    <Content Include="Scripts\telerik.draganddrop.js" />
+    <Content Include="Scripts\telerik.draganddrop.min.js" />
+    <Content Include="Scripts\telerik.editor.min.js" />
+    <Content Include="Scripts\telerik.grid.editing.js" />
+    <Content Include="Scripts\telerik.grid.editing.min.js" />
+    <Content Include="Scripts\telerik.grid.filtering.js" />
+    <Content Include="Scripts\telerik.grid.filtering.min.js" />
+    <Content Include="Scripts\telerik.grid.grouping.js" />
+    <Content Include="Scripts\telerik.grid.grouping.min.js" />
+    <Content Include="Scripts\telerik.grid.js" />
+    <Content Include="Scripts\telerik.grid.min.js" />
+    <Content Include="Scripts\telerik.grid.reordering.js" />
+    <Content Include="Scripts\telerik.grid.reordering.min.js" />
+    <Content Include="Scripts\telerik.grid.resizing.js" />
+    <Content Include="Scripts\telerik.grid.resizing.min.js" />
+    <Content Include="Scripts\telerik.imagebrowser.js" />
+    <Content Include="Scripts\telerik.imagebrowser.min.js" />
+    <Content Include="Scripts\telerik.list.js" />
+    <Content Include="Scripts\telerik.list.min.js" />
+    <Content Include="Scripts\telerik.menu.js" />
+    <Content Include="Scripts\telerik.menu.min.js" />
+    <Content Include="Scripts\telerik.panelbar.js" />
+    <Content Include="Scripts\telerik.panelbar.min.js" />
+    <Content Include="Scripts\telerik.slider.js" />
+    <Content Include="Scripts\telerik.slider.min.js" />
+    <Content Include="Scripts\telerik.splitter.js" />
+    <Content Include="Scripts\telerik.splitter.min.js" />
+    <Content Include="Scripts\telerik.tabstrip.js" />
+    <Content Include="Scripts\telerik.tabstrip.min.js" />
+    <Content Include="Scripts\telerik.textbox.js" />
+    <Content Include="Scripts\telerik.textbox.min.js" />
+    <Content Include="Scripts\telerik.timepicker.js" />
+    <Content Include="Scripts\telerik.timepicker.min.js" />
+    <Content Include="Scripts\telerik.treeview.js" />
+    <Content Include="Scripts\telerik.treeview.min.js" />
+    <Content Include="Scripts\telerik.upload.js" />
+    <Content Include="Scripts\telerik.upload.min.js" />
+    <Content Include="Scripts\telerik.window.js" />
+    <Content Include="Scripts\telerik.window.min.js" />
+    <Content Include="Scripts\themes.js" />
+    <Content Include="Scripts\vml.js" />
+    <Content Include="Views\Downloads\Colleen.aspx" />
+    <Content Include="Views\Downloads\Ian.aspx" />
+    <Content Include="Views\Downloads\Index.aspx" />
+    <Content Include="Views\Home\Index.aspx" />
+    <Content Include="Views\Shared\Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Views\Tinlin\Index.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\MicrosoftAjax.js" />
+    <Content Include="Scripts\MicrosoftAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.debug.js" />
+    <Content Include="Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target> -->
+  <Target Name="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(ProjectDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50608</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
