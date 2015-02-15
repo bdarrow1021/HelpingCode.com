@@ -129,7 +129,7 @@
                     </div>
                     <br />
                     <div class="large-4 columns panel matchup" data-equalizer-watch>
-                        <h3>War against: united ducks</h3>
+                        <h3>War against: Tooma Dushy</h3>
                         <p>Directions: If you are currently ranked 7-15 in the clan war please try to have your attacks completed ASAP to allow us to make better attacking moves later in the day. Members ranked 1-6 please stay tuned for attack changes. If both of your assigned targets have already been three starred, then feel free to attack target(s) of an increased difficulty.</p>
                         <ul class="pricing-table">
                             <li class="title">NewYorkJets101</li>
